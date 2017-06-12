@@ -4,6 +4,15 @@ This repository contains Dockerfile of [Python3](https://www.python.org/download
 ## Base Docker Image
 * dockerfile/ubuntu
 
+## Python 3 Packages
+* Theano
+* Tensorflow
+* SciKit-Learn
+* NumPy
+* SciPy
+* MatPlotLib
+* Bokeh
+
 ## Installation 
 1. Install [Docker](https://docs.docker.com/engine/installation/).
 2. Download automated build from public [Docker Hub Registry](https://hub.docker.com/): 
