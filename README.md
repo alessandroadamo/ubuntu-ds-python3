@@ -1,4 +1,4 @@
-# Ubuntu 16.04 for Python3 Datascientist
+# Ubuntu 16.04 for Python3 Data Scientist
 This repository contains Dockerfile of [Python3](https://www.python.org/download/releases/3.0/) for Docker's automated build published to the public [Docker Hub Registry](https://hub.docker.com/).
 
 ## Base Docker Image
