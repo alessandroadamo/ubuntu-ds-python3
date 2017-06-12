@@ -12,7 +12,29 @@ RUN apt-get -y install python3 python3-pip
 RUN apt-get autoclean
 
 RUN pip3 install --upgrade pip
-RUN pip3 install --upgrade Theano tensorflow numpy scipy scikit-learn jupyter matplotlib bokeh nltk 
+
+# Fundamentals
+RUN pip3 install --upgrade jupyter  \
+	numpy \
+	scipy \
+	pandas 
+
+# Math and Statistics
+RUN pip3 install --upgrade sympy \
+	statsmodels
+
+# Machine Learning
+RUN pip3 install --upgrade Theano \ 
+	tensorflow \
+	scikit-learn \
+	nltk
+
+# Plotting and Visualization
+RUN pip3 install --upgrade matplotlib \
+	bokeh \
+	ggplot \
+	plotly \
+	seaborn
 
 # Add Tini. Tini operates as a process subreaper for jupyter. This prevents
 # kernel crashes.

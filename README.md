@@ -5,13 +5,28 @@ This repository contains Dockerfile of [Python3](https://www.python.org/download
 * dockerfile/ubuntu
 
 ## Python 3 Packages
+
+### Fundamentals
+* NumPy
+* SciPy
+* Pandas
+* Jupyter
+
+### Math and Statistics
+* SymPy
+* Statsmodels
+
+### Machine Learning
 * Theano
 * Tensorflow
 * SciKit-Learn
-* NumPy
-* SciPy
+* NLTK
+
+### Plotting and Visualization
 * MatPlotLib
 * Bokeh
+* Ggplot
+* Seaborn
 
 ## Installation 
 1. Install [Docker](https://docs.docker.com/engine/installation/).
