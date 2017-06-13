@@ -44,7 +44,8 @@ ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/
 RUN chmod +x /usr/bin/tini
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
-RUN useradd -ms /bin/bash ds
+RUN adduser --disabled-password --gecos '' ds 
+# useradd -ms /bin/bash ds
 USER ds
 WORKDIR /home/ds
 
@@ -52,4 +53,5 @@ RUN mkdir /home/ds/notebooks
 WORKDIR /home/ds/notebooks
 
 EXPOSE 8888
+EXPOSE 22
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--NotebookApp.token=''", "--NotebookApp.base_url='/'", "--NotebookApp.notebook_dir='/home/ds/notebooks'"]
