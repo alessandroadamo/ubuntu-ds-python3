@@ -9,6 +9,7 @@ RUN apt-get install -y --no-install-recommends \
 	gfortran \
 	gcc 
 RUN apt-get -y install python3 python3-pip
+RUN apt-get -y install pandoc texlive texlive-latex-extra texlive-xetex
 RUN apt-get autoclean
 
 RUN pip3 install --upgrade pip
@@ -53,5 +54,4 @@ RUN mkdir /home/ds/notebooks
 WORKDIR /home/ds/notebooks
 
 EXPOSE 8888
-EXPOSE 22
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--NotebookApp.token=''", "--NotebookApp.base_url='/'", "--NotebookApp.notebook_dir='/home/ds/notebooks'"]
