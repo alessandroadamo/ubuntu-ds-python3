@@ -28,6 +28,10 @@ This repository contains Dockerfile of [Python3](https://www.python.org/download
 * Ggplot
 * Seaborn
 
+### Profiling
+* memory profiler
+* line profiler
+
 ## Installation 
 1. Install [Docker](https://docs.docker.com/engine/installation/).
 2. Download automated build from public [Docker Hub Registry](https://hub.docker.com/): 

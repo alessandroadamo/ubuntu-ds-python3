@@ -37,6 +37,9 @@ RUN pip3 install --upgrade matplotlib \
 	plotly \
 	seaborn
 
+# profilers 
+RUN pip3 install --upgrade line_profiler memory_profiler
+
 # Add Tini. Tini operates as a process subreaper for jupyter. This prevents
 # kernel crashes.
 # ENV TINI_VERSION v0.14.0
