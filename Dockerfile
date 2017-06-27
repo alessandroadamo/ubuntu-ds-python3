@@ -13,6 +13,7 @@ RUN apt-get -y install pandoc texlive texlive-latex-extra texlive-xetex
 RUN apt-get autoclean
 
 RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade cx_Oracle --pre
 
 # Fundamentals
 RUN pip3 install --upgrade jupyter  \
