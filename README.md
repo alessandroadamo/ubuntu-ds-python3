@@ -11,6 +11,7 @@ This repository contains Dockerfile of [Python3](https://www.python.org/download
 * SciPy
 * Pandas
 * Jupyter
+* PIL
 
 ### Math and Statistics
 * SymPy
@@ -19,6 +20,8 @@ This repository contains Dockerfile of [Python3](https://www.python.org/download
 ### Machine Learning
 * Theano
 * Tensorflow
+* Keras
+* Gensim
 * SciKit-Learn
 * NLTK
 

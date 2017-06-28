@@ -19,7 +19,7 @@ RUN pip3 install --upgrade jupyter  \
 	numpy \
 	scipy \
 	pandas \
-	PIL 
+	pillow 
 
 # Math and Statistics
 RUN pip3 install --upgrade sympy \
@@ -29,6 +29,8 @@ RUN pip3 install --upgrade sympy \
 RUN pip3 install --upgrade Theano \ 
 	tensorflow \
 	scikit-learn \
+	keras \
+	gensim \
 	nltk
 
 # Plotting and Visualization
